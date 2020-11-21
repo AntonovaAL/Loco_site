@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <!-- Кодировка документа -->
+    <meta charset="UTF-8">
+    <!-- Meta-тег для адаптивной верстки -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Подключаем fonts.css -->
+    <link href="./fonts.css" rel="stylesheet">
+    <!-- Подключаем css -->
+    <link href="./style.css" rel="stylesheet">
+    <title>LOCO</title>
+  </head>
+  <!-- Отобр. тело веб-страницы -->
+    <body>
+      <header class="header">
+        <div class="header__logo">LOCO</div>
+        <button class="header__lang">
+          <span class="header__lang-ru" href="#">RU</span>
+        </button>
+        <button class="header__menu-button menu-button">
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+        </button>
+      </header>
+  <!-- Первый слой стр  -->    
+    <main class="main">
+      <section class="collection">
+        <article class="collection__card">
+          <div class="collection__image"></div>
+            <div class="collection__info info-collection">
+              <h1 class="info-collection__title">Новая коллекция</h1>
+              <p class="info-collection__description description"> Бесплатная доставка включена. Предложение действует на сайте<a class="description__link" href="#">loco.com</a> и в магазинах до <time datetime="2018-09-18">18.09.2018.</time>Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.</p>
+              <button class="info-collection__button button">ЧИТАТЬ ДАЛЬШЕ</button>
+               <a class="info-collection__link-other link" href="#">ДРУГИЕ ПРЕДЛОЖЕНИЯ</a>
+            </div>
+        </article>
+        <div class="collection__social social">
+          <a class="social__item" href="#"><img class="social__icon" src="./images/icon-inst.svg" alt="Ссылка на Instagram"></a>
+          <a class="social__item" href="#"><img class="social__icon" src="./images/icon-vk.svg" alt="Ссылка на vk.com"></a>
+          <a class="social__item" href="#"><img class="social__icon" src="./images/icon-fb.svg" alt="Ссылка на Facebook"></a>
+        </div>
+        <div class="collection__scroll"></div>
+      </section>  
+  <!-- Второй слой стр -->
+    <section class="look">
+      <article class="look__card">
+        <div class="look__image-wrap">
+          <img class="look__image look__image_grey" src="./images/clutch-grey.png" alt="Серый клатч">
+          <img class="look__image look__image_pink" src="./images/clutch-pink.png" alt="Розовый клатч">
+        </div>
+        <div class="look__info info-product">
+          <h2 class="info-look__title card-title">Кожаный клатч</h2>
+            <div class="info-look__subtitle card-subtitle">ОСЕННЯЯ КОЛЛЕКЦИЯ</div>
+              <p class="info-look__description description">Бесплатная доставка включена. Предложение действует на сайте<a class="description__link" href="#">loco.com</a> и в магазинах до <time datetime="2018-09-18">18.09.2018.</time> Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.</p>
+              <div class="info-look__color color">
+                 <input class="color__input" type="radio" id="grey" name="color" value="grey">
+                 <label class="color__item color__item_grey" for="grey"></label>
+                 <input class="color__input" type="radio" id="pink" name="color" value="pink"checked>
+                 <label class="color__item color__item_pink color__item_checked" for="pink"></label>
+                 <input class="color__input" type="radio" id="blue" name="color" value="blue">
+                 <label class="color__item color__item_blue" for="blue"></label>
+                 <input class="color__input" type="radio" id="green" name="color" value="green">
+                 <label class="color__item color__item_green" for="green"></label>
+              </div>
+              <span class="info-look__price">1990₽</span>
+                <div class="info-look__quantity quantity">
+                  <button class="quantity__decrease">-</button>
+                  <span class="quantity__value">1</span>
+                  <button class="quantity__increase">+</button>
+                </div>
+              <button class="info-look__button button">ДОБАВИТЬ В КОРЗИНУ</button>
+        </div>
+      </article>
+      <a class="look__link-other link" href="#">ДРУГИЕ ТОВАРЫ НА LOCO.COM</a>
+    </section>
+<!-- Третий слой стр -->
+    <section class="clothes">
+      <article class="clothes__card">
+        <img class="clothes__image" src="./images/look.png" alt="Осенний лук">
+          <div class="clothes__info info-clothes">
+            <h2 class="info-clothes__title card-title">Serene Total Look</h2>
+            <div class="info-clothes__subtitle card-subtitle">ОСЕННЯЯ КОЛЛЕКЦИЯ</div>
+            <p class="info-clothes__description description">Джинсы, свитер, обувь.<br>В комплект также входит пакет ароматного чая и кружка.</p>
+            <div class="info-clothes__quantity quantity">
+              <button class="quantity__decrease quantity__decrease_pink">-</button>
+              <span class="quantity__value">1</span>
+              <button class="quantity__increase quantity__increase_pink">+</button>
+            </div>
+            <button class="info-clothes__button button">ДОБАВИТЬ В КОРЗИНУ</button>
+          </div>
+      </article>
+      <a class="clothes__link-other link" href="#">ДРУГИЕ ТОВАРЫ НА LOCO.COM</a>
+    </section>
+    </main>
+    <footer class="footer">
+      <span class="footer__clothes-text">РАЗРАБОТАНО В</span>
+      <img class="footer__clothes-logo" src="./images/logo-whs.png" alt="WebHero School">
+    </footer>
+  </body>
+</html>
